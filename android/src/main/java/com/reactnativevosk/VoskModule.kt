@@ -25,7 +25,7 @@ class VoskModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
 
     // Stop recording if data found
     if (text != null && text.isNotEmpty()) {
-      cleanRecognizer();
+      // cleanRecognizer();
       sendEvent("onResult", text)
     }
   }

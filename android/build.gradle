@@ -3,6 +3,7 @@ buildscript {
   def kotlin_version = rootProject.ext.has("kotlinVersion") ? rootProject.ext.get("kotlinVersion") : project.properties["Vosk_kotlinVersion"]
 
   repositories {
+    mavenLocal()
     google()
     mavenCentral()
   }
@@ -62,6 +63,7 @@ android {
 }
 
 repositories {
+  mavenLocal()
   mavenCentral()
   google()
 }
@@ -91,7 +93,7 @@ dependencies {
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   // From node_modules
   implementation 'net.java.dev.jna:jna:5.12.1@aar'
-  implementation 'com.alphacephei:vosk-android:0.3.46@aar'
+  implementation 'com.alphacephei:vosk-android:0.3.48@aar'
 }
 
 if (isNewArchitectureEnabled()) {

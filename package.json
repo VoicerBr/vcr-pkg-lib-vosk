@@ -1,6 +1,6 @@
 {
   "name": "vcr-pkg-lib-vosk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Speech recognition module for react native using Vosk library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
